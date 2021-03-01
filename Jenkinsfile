@@ -4,7 +4,9 @@ pipeline {
         maven 'maven-3.6.3'
         jdk 'jdk8' 
   }
-
+  environment {
+		 PATH = "C:\\Users\\Administrator\\AppData\\Roaming\\npm\\:%PATH%"
+      }
 
   stages {
     stage ('Initialize') {
